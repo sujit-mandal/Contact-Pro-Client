@@ -106,7 +106,7 @@ const ContactCard = ({ contact, refetch }) => {
           <span className="text-lg font-semibold">Email: </span>
           {contact.email}
         </h5>
-        <p>Address: {contact.address}</p>
+        <p className="text-sm text-center">Address: {contact.address}</p>
       </div>
       <EditModal
         contact={contact}
