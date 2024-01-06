@@ -36,7 +36,7 @@ const AddContact = () => {
             <input
               {...register("name", {
                 required: { value: true, message: "Name is required." },
-                maxLength: 20,
+                maxLength: 30,
               })}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               name="name"
