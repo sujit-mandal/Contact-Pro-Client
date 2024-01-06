@@ -6,7 +6,7 @@ const AllContacts = () => {
   const { data, refetch } = useQuery({
     queryKey: ["contacts"],
     queryFn: async () => {
-      const res = await axios.get("https://neutron-server.vercel.app/contacts");
+      const res = await axios.get("http://localhost:5000/contacts");
       return res.data;
     },
   });

@@ -16,7 +16,7 @@ const ContactCard = ({ contact, refetch }) => {
     setIsOpen(true);
   };
   const handleDelete = (id) => {
-    axios.delete(`https://neutron-server.vercel.app/delete/${id}`).then((res) => {
+    axios.delete(`http://localhost:5000/delete/${id}`).then((res) => {
       if (res.data.acknowledged) {
         toast.success("Contact deleted");
         refetch();

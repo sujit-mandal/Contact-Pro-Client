@@ -12,7 +12,7 @@ const EditModal = ({ isOpen, closeModal, contact, refetch }) => {
   } = useForm();
 
   const onSubmit = (data) => {
-    axios.patch(`https://neutron-server.vercel.app/${contact._id}`, data).then((res) => {
+    axios.patch(`https://neutron-server.vercel.app/update/${contact._id}`, data).then((res) => {
       console.log(res);
       if(res.data.acknowledged){
         refetch()
