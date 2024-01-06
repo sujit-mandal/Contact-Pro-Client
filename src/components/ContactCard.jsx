@@ -93,7 +93,7 @@ const ContactCard = ({ contact, refetch }) => {
         </Transition>
       </Menu>
       <img
-        src="https://i.ibb.co/hy8KCKS/p-5.jpg"
+        src={contact.photo}
         alt=""
         className="h-24 w-24 rounded-full mx-auto mt-5"
       />
